@@ -1,21 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | QR code component</title>
+    <title>Frontend Mentor | QR code component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    body{
-      background: #4c7072;
-    }
-  </style>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        :root {
+            --color-slate-900: #1f314f;
+            --color-slate-500: #68778d;
+            --color-slate-300: #d5e1ef;
+            --color-white: #fff;
+            --color-blue-600: #2c7dfa;
+            --color-blue-500: #3685ff;
+            --font-family: "Outfit", sans-serif;
+            --second-family: "Barlow", sans-serif;
+        }
+        body {
+            background: var(--color-slate-300);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        article{
+            border-radius: 1.25rem;
+            padding: 1rem 1rem 2.5rem 1rem;
+            width: 20rem;
+            height: 31.19rem;
+            box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.05);
+            background: var(--color-white);
+            text-align: center;
+        }
+        img{
+            border-radius: 0.62rem;
+            max-width: 100%;
+        }
+        article div:last-child{
+            margin-top: calc(24rem/16);
+            padding: 0 1rem;
+        }
+        h2{
+            font-family: var(--font-family),serif;
+            font-weight: 700;
+            font-size: 1.38rem;
+            line-height: 120%;
+            color: var(--color-slate-900);
+        }
+        p{
+            font-family: var(--second-family),serif;
+            font-weight: 400;
+            font-size: 0.94rem;
+            line-height: 140%;
+            letter-spacing: 0.01em;
+            color: var(--color-slate-500);
+            padding: 0 1rem;
+        }
+    </style>
 </head>
 <body>
-<div>first code maybe ok</div>
+<article>
+    <div>
+        <img src="./images/image-qr-code.png" alt="">
+    </div>
+    <div>
+        <h2>
+            Improve your front-end skills by building projects
+        </h2>
+        <p>
+            Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+        </p>
+    </div>
+</article>
 </body>
 </html>
